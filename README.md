@@ -4,14 +4,15 @@
 
 # 准备工作
 
-- git clone xxx
+- `git clone xxx`
 
-- 切换到分支hexo-new
+- 切换到分支`hexo-new`
 
 - 下载主题
   
-```
-git clone https://github.com/zchengsite/hexo-theme-oranges.git themes/oranges
+``` javascript
+cd 根目录
+git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
 - 主题配置文件所在位置
