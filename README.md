@@ -3,10 +3,19 @@
 这是一个由多人共同维护的博客
 
 # 准备工作
+- 安装hexo
+  
+  ```javascript
+  npm install hexo-cli -g
+  ```
 
 - `git clone xxx`
 
 - 切换到分支`hexo-new`
+  
+  ```javascript
+  npm install
+  ```
 
 - 下载主题
   
@@ -31,4 +40,23 @@ hexo new "my post"
 
 ```
 hexo new page xxx
+```
+
+## 预览
+
+```javascript
+hexo generate
+
+hexo server 
+// 本地预览
+http://localhost:4000/
+
+// 设定端口方式
+hexo server -p 5000 
+```
+
+## 发布
+
+```javascript
+hexo deploy
 ```
