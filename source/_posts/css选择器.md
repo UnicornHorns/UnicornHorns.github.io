@@ -60,15 +60,16 @@ h1 + p {color: red;}
 ```
 ######  6、伪类选器
 
-    <font color=red>
+<font color=red>
     锚类型分为：已访问的和未访问的，这些类型称为伪类，使用这个伪类的选择器称为伪类选择器。
-    </font>
+</font>
 
 -  链接伪类
-<font color=red>
-在HTML、XHTML1.0、1.1中，超链接是有href属性的所有a元素；</br>
-在XML语言中，超链接则可以是任何元素，只要它作为另一个资源的链接；
-</font></br>
+
+    <font color=red>
+    在HTML、XHTML1.0、1.1中，超链接是有href属性的所有a元素；</br>
+    在XML语言中，超链接则可以是任何元素，只要它作为另一个资源的链接；
+    </font>
 
     <font color=blue>
     CSS2.1中定义了 :link、 :visited两个静态伪类(第一次显示后，一般不会再改变文档样式)</br>
@@ -83,11 +84,12 @@ a:visited{color: blue;}
 ```css
 p:first-child {color: red;} 
 ```
-######  7、伪元素选器
+###### 7、伪元素选器
 
-    <font color=red>
+<font color=red>
     伪元素能够在文档中插入假想的元素，进而得到某种效果，CSS2.1中定义了4个伪元素
-    </font>
+</font>
+
 ```css
 p:first-letter{color: red;}  
 p:first-line{color: blue;}
@@ -97,10 +99,11 @@ color: salmon;
 } 
 ```
 
-   ######  8、结构和层叠
-   <font color=red>
-      当多条规则应用于同一元素时，浏览器则会去计算优先级，值是从左向右比较
-   </font>
+######  8、结构和层叠
+
+<font color=red>
+  当多条规则应用于同一元素时，浏览器则会去计算优先级，值是从左向右比较
+</font>
 
 -  优先级
     1. ID：0100
@@ -109,7 +112,7 @@ color: salmon;
     4. 结合符号和通配选择器对特殊性没有任何贡献，换句话说，其优先级为0000
     5. 内联，其优先级为100（注意是3个），与ID选择器相同，所以ID选择器很容易覆盖内联样式
     
- -  继承
+-  继承
  
    <font color=red>
       继承沿着文档树向下传播到后代元素，并且继承值没有任何优先级<br/>
@@ -123,17 +126,17 @@ color: salmon;
    列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
    表格元素可继承：border-collapse。
    
--   层叠
+-  层叠
 
   <font color=red>
      当优先级相等时，使用层叠规则，如下：
   </font>
   
   1. 按权重和来源，从大到小
-  -   读者的important声明
-  -   创作人员的important声明
-  -   创作人员的正常声明
-  -   读者的正常声明
-  -   用户代理声明（浏览器默认样式）
+  -  读者的important声明
+  -  创作人员的important声明
+  -  创作人员的正常声明
+  -  读者的正常声明
+  -  用户代理声明（浏览器默认样式）
   2. 按优先级大小
   3. 按顺序排序 ：越后出现权重越大，如果样式表中有导入的样式表，一般认为导入样式表的声明在前，主样式表声明在后
