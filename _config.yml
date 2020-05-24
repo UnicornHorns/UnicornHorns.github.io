@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: UnicornHorns
 subtitle: ''
 description: ''
 keywords:
 author: UnicornHorns
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -93,7 +93,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: oranges
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -101,3 +101,91 @@ deploy:
   type: git
   repository: git@github.com:UnicornHorns/UnicornHorns.github.io.git
   branch: master
+
+# next theme config
+# https://hexo.io/zh-cn/docs/configuration.html
+# 主题的配置文件。在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置
+theme_config:
+  #scheme: Muse
+  #scheme: Mist
+  #scheme: Pisces
+  scheme: Gemini
+
+  menu:
+    home: / || fa fa-home
+    about: /about/ || fa fa-user
+    tags: /tags/ || fa fa-tags
+    categories: /categories/ || fa fa-th
+    archives: /archives/ || fa fa-archive
+  
+  # Enable / Disable menu icons / item badges.
+  menu_settings:
+    icons: true
+    badges: false
+  
+  sidebar:
+    position: left
+    avatar:
+      url: #/images/avatar.gif
+      # If true, the avatar will be dispalyed in circle.
+      rounded: false
+      # If true, the avatar will be rotated with the cursor.
+      rotated: false
+
+  # Posts / Categories / Tags in sidebar.
+  site_state: true
+
+  social:
+    GitHub:  https://github.com/UnicornHorns || fab fa-github
+    E-Mail: mailto:unicornHorns2020@163.com || fa fa-envelope
+  
+  social_icons:
+    enable: true
+    icons_only: false
+    transition: false
+
+  footer:
+    powered: false
+
+  codeblock:
+    # Code Highlight theme
+    # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
+    # See: https://github.com/chriskempson/tomorrow-theme
+    highlight_theme: night
+    # Add copy button on codeblock
+    copy_button:
+      enable: true
+      # Show text copy result.
+      show_result: true
+      # Available values: default | flat | mac
+      style: mac
+  
+  back2top:
+    enable: true
+    # Back to top in sidebar.
+    sidebar: false
+    # Scroll percent label in b2t button.
+    scrollpercent: true
+
+  # Reading progress bar
+  reading_progress:
+    enable: true
+    # Available values: top | bottom
+    position: top
+    color: "#37c6c0"
+    height: 3px
+  
+  # Bookmark Support
+  bookmark:
+    enable: false
+    # Customize the color of the bookmark.
+    color: "#222"
+    # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+    # If manual, only save it by clicking the bookmark-icon.
+    save: auto
+
+  # `Follow me on GitHub` banner in the top-right corner.
+  github_banner:
+    enable: true
+    permalink: https://github.com/UnicornHorns
+    title: Follow me on GitHub
